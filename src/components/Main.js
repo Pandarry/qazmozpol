@@ -1,4 +1,3 @@
-import Quote from "./Quote";
 import Services from "./Services";
 import '../css/normalize.css';
 import '../css/style.css';
@@ -7,7 +6,7 @@ import '../css/media.css';
 const Main = () => {
   return(
     <main>
-      <section className="hero">
+      <section className="hero" id="main">
         <div className="container">
           <div className="hero-content">
             <span className="hero-subtitle">Место где</span>
@@ -18,7 +17,6 @@ const Main = () => {
         </div>
       </section>
       <Services/>
-      <Quote/>
     </main>
   )
 }

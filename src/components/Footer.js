@@ -4,7 +4,7 @@ import '../css/media.css';
 
 const Footer = () => {
   return(
-    <footer className="footer">
+    <footer className="footer" id='footer'>
       <div className="container">
         <div className="footer-top">
           <div className="footer-contacts-item">
@@ -18,34 +18,19 @@ const Footer = () => {
         </div>
         <div className="footer-middle">
           <div className="footer-column">
-            <h3 className="footer-title">Преимущества</h3>
-            <ul className="footer-list list-reset">
-              <li className="footer-item">
-                <a src='../'/>
-                <p className="footer-link">Качественная работа</p>
-              </li>
-              <li className="footer-item">
-                <p className="footer-link">Материалы высокого качества</p>
-              </li>
-              <li className="footer-item">
-                <p className="footer-link">Быстрый монтаж покрытия</p>
-              </li>
-              <li className="footer-item">
-                <p className="footer-link">Гарантии от&nbsp;10&nbsp;лет</p>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-column">
             <h3 className="footer-title">Компания</h3>
             <ul className="footer-list list-reset">
               <li className="footer-item">
-                <a href="/#" className="footer-link">О нас</a>
+                <a href="#main" className="footer-link">О нас</a>
               </li>
               <li className="footer-item">
-                <a href="/#" className="footer-link">Контакты</a>
+                <a href="#services" className="footer-link">Наши работы</a>
               </li>
               <li className="footer-item">
-                <a href="/#" className="footer-link">Наши работы</a>
+                <a href="#services" className="footer-link">Блог</a>
+              </li>
+              <li className="footer-item">
+                <a href="#footer" className="footer-link">Контакты</a>
               </li>
             </ul>
           </div>
@@ -56,19 +41,45 @@ const Footer = () => {
               <li className="social-item">
                 <a 
                   href="https://www.instagram.com/qazmozpol/" 
-                  target={"_blank"}
+                  target="_blank"
                   rel="noreferrer" 
                   className="social-link">Instagram</a>
               </li>
               <li className="social-item">
                 <a 
-                  href="/#" 
-                  target={"_blank"}
+                  href="https://wa.me/77012685959" 
+                  target="_blank"
                   rel="noreferrer" 
                   className="social-link">WhatsApp</a>
               </li>
             </ul>
           </div>
+
+          <div className="footer-column">
+            <h3 className="footer-title">Полезные ссылки</h3>
+            <ul className="footer-list list-reset">
+              <li className="footer-item">
+                <a href="https://nastroike.com/uchimsya-vmeste/mozaichnye-poly-vidy-tehnologiya-ukladki-osobennosti-shlifovki-i-polirovki"
+                   className="footer-link"
+                   target="_blank"
+                   rel="noreferrer">Что такое мозаичный пол</a>
+              </li>
+              <li className="footer-item">
+                <a href="https://lasarstroi.ru/statiy.html?id=12"
+                   className="footer-link"
+                   target="_blank"
+                   rel="noreferrer">Преимущества мозаичного пола</a>
+              </li>
+              <li className="footer-item">
+                <a href="https://www.atlasconcordeusa.com/en/tile-gallery/"
+                   className="footer-link"
+                   target="_blank"
+                   rel="noreferrer">Немного эстетики</a>
+              </li>
+            </ul>
+          </div>
+
+
           
         </div>
         <div className="footer-bottom">

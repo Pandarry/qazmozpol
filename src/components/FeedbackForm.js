@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
-import './FeedbackForm.css';
+import '../css/FeedbackForm.css';
 
-const FeedbackForm = () => {
+const FeedbackForm = ({ setShow }) => {
 
   const {
     register,
@@ -14,6 +14,7 @@ const FeedbackForm = () => {
   const onSubmit = (data) => {
     console.log(JSON.stringify(data));
     reset();
+    setShow(false);
   }
 
   return(
@@ -30,6 +31,7 @@ const FeedbackForm = () => {
           </div>
         </div>
         <div className="right-side">
+          <button className="form-close" onClick={() => {setShow(false)}}/>
           <div className="topic-text">Заказать обратный звонок</div>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="input-box">
@@ -51,7 +53,11 @@ const FeedbackForm = () => {
             </div>
             <div className="errors">{errors?.Телефон?.message}</div>
             <div className="button">
-              <input type="submit" value="Отправить"/>
+              <input 
+                type="submit" 
+                value="Отправить"
+                
+                />
             </div>
           </form>
         </div>

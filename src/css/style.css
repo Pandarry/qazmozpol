@@ -90,6 +90,7 @@ img {
   line-height: 19px;
   color: #EFEFEF;
   transition: color 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 .nav__link:hover {
@@ -124,6 +125,7 @@ img {
   font-size: 16px;
   background-color: #112B3C;
   color: #EFEFEF;
+  cursor: pointer;
 }
 
 .header-btn:hover {
@@ -173,9 +175,8 @@ img {
 }
 
 .services {
-  margin-bottom: -180px;
   padding-top: 120px;
-  padding-bottom: 150px;
+  padding-bottom: 170px;
 }
 
 .site-title {
@@ -189,22 +190,6 @@ img {
   width: 50px;
   height: 50px;
   margin-bottom: 20px;
-}
-
-.draws {
-  padding-left: 94px;
-}
-
-.quality {
-  padding-left: 56px;
-}
-
-.wallet {
-  padding-left: 72px;
-}
-
-.warranty {
-  padding-left: 49px;
 }
 
 .services-title {
@@ -237,33 +222,11 @@ img {
 }
 
 .services-item {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.get-started {
-  position: relative;
-  top: 180px;
-  padding: 70px 0;
-  width: 70%;
-  box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
-  background-color: hsl(0, 0%, 98%);
-  padding-left: calc((90% - 1150px) / 2);
-}
-
-.get-started-title {
-  margin: 0;
-  margin-bottom: 50px;
-  max-width: 822px;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 74px;
-  color: #112B3C;
+  text-align: center;
 }
 
 .footer {
-  padding-top: 250px;
+  padding-top: 80px;
   color: #EFEFEF;
   background-image: url('/public/img/footerbg.jpg');
   background-position: center;
@@ -310,16 +273,21 @@ img {
 }
 
 .footer-link {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 40px;
   text-decoration: none;
   color: #EFEFEF;
 }
 
+.footer-link:hover {
+  color: #F66B0E;
+}
+
+.footer-item {
+  font-size: 16px;
+  line-height: 40px;
+}
+
 .footer-middle {
   display: grid;
-  gap: 70px;
   grid-template-columns: repeat(3, 1fr);
   padding: 30px 0;
   border-bottom: 1px solid #EFEFEF;
@@ -352,4 +320,8 @@ img {
   display: block;
   text-decoration: none;
   color: #EFEFEF;
+}
+
+.social-link:hover {
+  color: #F66B0E;
 }
